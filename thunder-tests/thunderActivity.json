@@ -17,5 +17,43 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "0fefca8e-eea5-435c-a520-354ccb7b1288",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/chat/getanswer",
+    "url": "http://localhost:5000/chat/getanswer",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-20T20:35:04.185Z",
+    "modified": "2023-04-20T20:35:04.185Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"content\":\"Q:What is the capital of New York?A:New york city.\"}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b14fee50-f569-4b40-9382-e970ffa00cc0",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/chat/getanswer",
+    "url": "http://localhost:5000/chat/getanswer",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-20T20:36:46.684Z",
+    "modified": "2023-04-20T20:49:11.023Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"content\":\"Q:when did the american revolution begin?A:1876.\"}",
+      "form": []
+    },
+    "tests": []
   }
 ]
