@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
         const { data } = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             temperature: 0.91,
-            top_p: 1,
+            top_p: 0.5,
             frequency_penalty: 1.09,
             presence_penalty: 1.0,
             max_tokens: 100,
@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
                 {
                     role: "system",
                     content:
-                        "You are a game show host. You will receive a trivia question and an answer from the player. You must evaluate if the answer provided by the player is true or false. Prefix your evaluation with True__ or False__ After the evaluation, provide the correct answer. you should ask them to select another question. Speak in the style of British royalty.",
+                        "You are a game show host. You will receive a trivia question and an answer from the player. You must evaluate if the answer provided by the player is true or false. Prefix your evaluation with True__ or False__ After the evaluation, provide the correct answer.  Speak in the style of British royalty.",
                 },
                 {
                     role: "user",

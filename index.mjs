@@ -1,6 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 import askQuestionRoute from "./routes/askQuestion.mjs";
 import createQuestionsRoute from "./routes/createQuestions.mjs";
+import createQuestionsRoute2 from "./routes/createQuestions2.mjs";
 import getAnswer from "./routes/getAnswer.mjs";
 import morgan from "morgan";
 import cors from "cors";
@@ -20,6 +21,7 @@ app.disable("x-powered-by");
 
 app.use("/chat/askquestion", askQuestionRoute);
 app.use("/chat/createquestions", createQuestionsRoute);
+app.use("/chat/createquestions2", createQuestionsRoute2);
 app.use("/chat/getanswer", getAnswer);
 app.listen(port, () => {
     console.log(`listening on port ${port}`);

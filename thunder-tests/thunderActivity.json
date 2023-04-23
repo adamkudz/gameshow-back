@@ -23,16 +23,16 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:5000/chat/getanswer",
-    "url": "http://localhost:5000/chat/getanswer",
-    "method": "GET",
+    "url": "http://localhost:5000/chat/createquestions",
+    "method": "POST",
     "sortNum": 0,
     "created": "2023-04-20T20:35:04.185Z",
-    "modified": "2023-04-20T20:35:04.185Z",
+    "modified": "2023-04-23T20:44:49.660Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\"content\":\"Q:What is the capital of New York?A:New york city.\"}",
+      "raw": "{\"content\":\"science\",\"difficulty\":\"easy\"}",
       "form": []
     },
     "tests": []
